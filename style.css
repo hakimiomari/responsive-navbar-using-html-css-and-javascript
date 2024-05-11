@@ -1,0 +1,163 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #807a7a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 1rem;
+}
+nav .links {
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  display: none;
+}
+nav .logo h3,
+nav .links span {
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .logo h3 span {
+  color: orange;
+}
+
+nav .links span:hover {
+  color: orange;
+}
+
+nav .registration {
+  display: none;
+  gap: 1rem;
+}
+
+nav .registration button {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+nav .registration .login {
+  background-color: orange;
+}
+
+nav .registration .login:hover {
+  background-color: #222;
+}
+
+nav .registration .sign_up {
+  background-color: #222;
+}
+nav .registration .sign_up:hover {
+  background-color: orange;
+}
+
+nav .grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+nav .grid .line_1 {
+  width: 40px;
+  height: 4px;
+  background-color: orange;
+}
+nav .grid .line_2 {
+  width: 30px;
+  height: 4px;
+  background-color: orange;
+}
+nav .grid .line_3 {
+  width: 20px;
+  height: 4px;
+  background-color: orange;
+}
+
+#mobile {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100vh;
+  background-color: #222;
+  transition: all 0.5s ease;
+}
+#mobile .mobile_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 30px;
+  background-color: #fff;
+}
+
+#mobile .mobile_logo h3 {
+  text-transform: uppercase;
+}
+#mobile .mobile_logo h3 span {
+  color: orange;
+}
+#mobile .mobile_logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#mobile .mobile_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#mobile .mobile_links span {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#mobile .mobile_links span:last-child {
+  border-bottom: none;
+}
+
+#mobile .mobile_links span:hover {
+  color: orange;
+}
+
+#mobile .mobile_logo span:hover {
+  color: orange;
+}
+
+@media (min-width: 776px) {
+  nav .grid {
+    display: none;
+  }
+  nav .links {
+    display: flex;
+  }
+  nav .registration {
+    display: flex;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
